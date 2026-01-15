@@ -1,0 +1,20 @@
+{
+    "name": "villanyautosok.hu",
+    "url": "villanyautosok.hu",
+    "stamp": 1768508906,
+    "author": "Bagi Mikl\u00f3s",
+    "match": "villanyautosok.hu",
+    "config": {
+        "type": "xpath",
+        "xpath": "div[@class='entry']",
+        "cleanup": [
+            "a[@id='authorcard']",
+            "div[@id='blokkok']",
+            "div[@id='disquscommentbox']",
+            "div[@id='disqus_thread']",
+            "blockquote[contains(@class,'wp-embedded-content')]\/\/p",
+            "iframe[contains(@class,'wp-embedded-content') or (contains(@src,'villanyautosok.hu') and contains(@src,'\/embed\/'))]",
+            "div[@class='hvers']"
+        ]
+    }
+}
